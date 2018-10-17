@@ -49,7 +49,7 @@ export interface Props {
   placeholder?: string;
   value?: any[];
   error?: boolean;
-  variation?: 'standard' | 'outlined' | 'filled'
+  variant?: 'outlined' | 'standard' | 'filled';
 }
 
 declare const ChipInput: React.ComponentType<Props>;
