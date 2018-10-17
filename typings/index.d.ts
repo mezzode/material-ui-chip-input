@@ -31,6 +31,7 @@ export interface Props {
   };
   defaultValue?: any[];
   disabled?: boolean;
+  disableUnderline?: boolean;
   FormHelperTextProps?: FormHelperTextProps;
   fullWidth?: boolean;
   fullWidthInput?: boolean;
@@ -48,6 +49,7 @@ export interface Props {
   placeholder?: string;
   value?: any[];
   error?: boolean;
+  variation?: 'standard' | 'outlined' | 'filled'
 }
 
 declare const ChipInput: React.ComponentType<Props>;
