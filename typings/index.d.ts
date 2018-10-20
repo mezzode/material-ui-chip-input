@@ -22,6 +22,7 @@ export type ChipRenderer = (
 export interface Props {
   allowDuplicates?: boolean;
   blurBehavior?: 'clear' | 'add' | 'ignore';
+  classes: Record<string, string>;
   chipRenderer?: ChipRenderer;
   clearInputValueOnChange?: boolean;
   dataSource?: any[];
@@ -40,6 +41,7 @@ export interface Props {
   InputProps?: InputProps;
   inputRef?: (ref: React.Ref<HTMLInputElement>) => any;
   label?: React.ReactNode;
+  margin?: 'none' | 'dense' | 'normal';
   newChipKeyCodes?: number[];
   onAdd?: (chip: any) => any;
   onBeforeAdd?: (chip: any) => boolean;
